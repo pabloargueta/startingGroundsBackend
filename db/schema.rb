@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2018_10_17_164833) do
     t.text "pets", default: ""
     t.string "gender", default: ""
     t.text "afterWorkTimeSpend", default: ""
+    t.string "background_url", default: ""
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

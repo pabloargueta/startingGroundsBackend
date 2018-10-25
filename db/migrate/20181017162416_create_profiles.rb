@@ -11,6 +11,7 @@ class CreateProfiles < ActiveRecord::Migration[5.2]
       t.text :pets, default: ''
       t.string :gender, default: ''
       t.text :afterWorkTimeSpend, default: ''
+      t.string :background_url, default: ''
       t.belongs_to :user, foreign_key: true
 
       t.timestamps

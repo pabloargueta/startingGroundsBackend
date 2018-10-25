@@ -14,9 +14,11 @@ class UsersController < ApplicationController
     end
 
     def profile
-      # byebug
+
       render json: current_user, get_image_url: get_image_url
     end
+
+
 
     def attachImage
       current_user.avatar.attach(params[:image])
@@ -31,6 +33,9 @@ class UsersController < ApplicationController
     def image_params
       params.permit(:image)
     end
+
+  
+
 
 
 
